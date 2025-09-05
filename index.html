@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">MyPortfolio</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Home -->
+  <section id="home" class="hero reveal">
+    <div class="container">
+      <h1>Hi, I'm <span class="accent">MITHA NARTHAGI</span></h1>
+      <p class="lead">A web developer who builds clean and interactive web experiences.</p>
+      <a class="btn" href="#projects">View Projects</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a motivated developer who loves building responsive websites and learning new tech.
+        I enjoy clean UI and writing maintainable code.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <p>HTML • CSS • JavaScript • React</p>
+        </div>
+        <div class="skill">
+          <h3>Backend</h3>
+          <p>Node.js • Express • REST APIs</p>
+        </div>
+        <div class="skill">
+          <h3>Tools</h3>
+          <p>Git • VSCode • Figma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p>Short description of the project and the tech used.</p>
+          <a href="https://github.com/yourprofile/project1" target="_blank" rel="noreferrer" class="small-link">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>Short description of the project and the tech used.</p>
+          <a href="https://github.com/yourprofile/project2" target="_blank" rel="noreferrer" class="small-link">View on GitHub</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <h2>Contact Me</h2>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <input type="text" id="name" name="from_name" placeholder="Your name" required />
+        <input type="email" id="email" name="email_id" placeholder="Your email" required />
+        <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <p id="statusMsg" class="status-msg" role="status" aria-live="polite"></p>
+
+      <p class="small-note">Or reach me directly at: <a href="mailto:youremail@example.com">mithanarthagi@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with ♥</p>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>
